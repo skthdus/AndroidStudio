@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">소연이 어플리케이션</string>
+
+    <string name="intro">이곳은 첫번째 액티비티입니다</string>
+
+    <string-array name="colors">
+        <item>Purple</item>
+        <item>Yellow</item>
+        <item>Pink</item>
+    </string-array>
+</resources>
