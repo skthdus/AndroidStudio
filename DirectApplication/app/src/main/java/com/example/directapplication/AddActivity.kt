@@ -3,6 +3,7 @@ package com.example.directapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 
@@ -27,6 +28,7 @@ class AddActivity : AppCompatActivity() {
             // Intent에 내용을 달아주자 (key, value)
             intent.putExtra("title", title)
             intent.putExtra("url", url)
+
 
             // 실행 (setResult(resultCode, intent))
             setResult(RESULT_OK, intent)

@@ -3,7 +3,7 @@ package com.example.directapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
+import android.util.Log
 import android.widget.Button
 import android.widget.ListView
 import androidx.activity.result.contract.ActivityResultContracts
@@ -11,6 +11,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 class MainActivity : AppCompatActivity() {
 
     var urlList = ArrayList<DirectVO>()
+lateinit var adapter: DirectAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,12 +44,17 @@ class MainActivity : AppCompatActivity() {
         // 4-2. ListView 한 칸에 들어갈 디자인 (템플릿 -> xml)
         // 4-3. AddActivity에서 받아온 결과값으로 ListView에 들어갈 데이터
         // (title, url ---> 하나의 자료형으로 묶어주세요 (DirectVO))
-        urlList.add(DirectVO("구글","www.google.com"))
+
+
 
 
         // 4-4. Adapter 만들기
+        adapter = DirectAdapter(this, R.layout.direct_list, urlList)
 
         // 4-5. Adapter ListView에 적용!!
+        lv.adapter = adapter
+
+
 
     }
 
@@ -58,7 +64,8 @@ class MainActivity : AppCompatActivity() {
         if(it.resultCode == RESULT_OK){
             val title = it.data?.getStringExtra("title")
             val url = it.data?.getStringExtra("url")
-
+            urlList.add(DirectVO(title!!,url!!))
         }
+        adapter.notifyDataSetChanged()
     }
 }
