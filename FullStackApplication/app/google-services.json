@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "449731457801",
+    "project_id": "full-stack-ced90",
+    "storage_bucket": "full-stack-ced90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449731457801:android:7c7d1124d5eee2502d59d8",
+        "android_client_info": {
+          "package_name": "com.example.fullstackapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449731457801-kb2lt4r2l2nsu7r12erd2ek5nu0tk30m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCra_O-r0YYhN7C1W7HT11IjaSPb8oIJ4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449731457801-kb2lt4r2l2nsu7r12erd2ek5nu0tk30m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
