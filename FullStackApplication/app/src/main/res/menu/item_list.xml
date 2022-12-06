@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tab1"
+        android:icon="@drawable/icon_home"
+        android:title="홈" />
+    <item
+        android:id="@+id/tab2"
+        android:icon="@drawable/icon_tip"
+        android:title="꿀팁" />
+    <item
+        android:id="@+id/tab3"
+        android:icon="@drawable/icon_chat"
+        android:title="자취톡" />
+    <item
+        android:id="@+id/tab4"
+        android:icon="@drawable/icon_bookmark"
+        android:title="북마크" />
+    <item
+        android:id="@+id/tab5"
+        android:icon="@drawable/icon_store"
+        android:title="스토어" />
+</menu>

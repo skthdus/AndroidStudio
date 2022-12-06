@@ -1,6 +1,7 @@
+package com.example.ex221205
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.ex221205.R
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
